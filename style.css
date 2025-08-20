@@ -1,9 +1,38 @@
-body{
-    background: rgb(18, 205, 174);
+body {
+    background-image: url('./assets/vecteezy_vector-watercolored-galaxy-texture_123521.svg'); /* Caminho relativo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-position: center; /* Centraliza a imagem */
+    margin: 0;
 }
+.menu{
+    background: rgba(30, 2, 122, 0.33);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+li{
+color: fuchsia;
+font-size: 24px;
+list-style: none;
+display: inline-block;
+margin: 20px;
+font-weight: bold;
+cursor: pointer;
+}
+h1,h2,h3{
+    text-align: center;
+    color: rgb(11, 11, 11);
+    font-family: 'Courier New', Courier, monospace;
+}
+
 img{
     width: 320px;
     height: 300px;
     border-radius: 10px;
+    align-content: center;
+    position: relative;
+    left: 500px;
     
 }
