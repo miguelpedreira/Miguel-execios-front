@@ -87,3 +87,49 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 900px) {
+  .container-group {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .containe-1,
+  .containe-2 {
+    margin: 20px 0;
+    width: 90vw;
+    height: auto;
+  }
+
+  p {
+    width: 90vw;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cabeçalho {
+    font-size: 18px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  ul,
+  li {
+    gap: 20px;
+    font-size: 16px;
+    margin-right: 0;
+    margin-top: 5px;
+  }
+
+  .div-1,
+  .div-2,
+  .div-3 {
+    width: 90vw;
+    height: 60px;
+    font-size: 14px;
+  }
+}
