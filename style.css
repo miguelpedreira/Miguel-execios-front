@@ -1,135 +1,113 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");  /*  impotaçao do google fonte para o css*/
+* {
   margin: 0;
   padding: 0;
-  background: red;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.cabeçalho {
-  background: black;
-  color: #ffffff;
+body { /*  todo o estilo dentro do  body */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /*  para nao deixa a imagem se mover */
+  background: url(./assets/img.jpg); /*  imagem de fundo */
+  background-size: cover;
+  background-position: center;
+}
+.conteiner {
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid #rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: #fff;
+  padding: 30px 40px;
+  box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+.conteiner h1 {
   text-align: center;
-  height: 50px;
+  font-size: 36px;
+}
+.input-box {
+  position: relative;
   width: 100%;
-  font-size: 24px;
-  margin: 0; /* Removendo toda a margem */
+  height: 50px;
+  margin: 30px 0;
+ 
 }
-ul,
-li {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  gap: 50px;
-  margin-right: 20px;
-  margin-top: 10px;
+.input-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid;
+  outline: none;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+ border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
-li {
-  cursor: pointer;
+.input-box input::placeholder {
+  color: #1b960b;
 }
-.containe-1 .containe-2{
+  .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #1b960b;
+    cursor: pointer;
+  } 
+  .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px ;
+    
 
+  }
+  .remember-forgot label input{
+    margin-right: 5px;
+    accent-color: #fff;
+  }
+.remember-forgot a{
+  color: #b0d5ab;
+  text-decoration: none;
 }
-.containe-1 {
-  width: 250px;
-  height: 500px;
-  background : white;
-  margin-top: 40px;
-  margin-left: 29px;
-  justify-content: center;
-  display: grid;
-  align-items: center;
+.remember-forgot a:hover{
+  text-decoration: underline;
 }
-.containe-2 {
-  width: 250px;
-  height: 500px;
-  background: white;
-  margin-top: 40px;
-  margin-left: 29px;
-  justify-content: center;
-  display: grid;
-  align-items: center;
-  margin-right: 20px;
-}
-.div-1 {
-  width: 200px;
-  height: 100px;
-  background: black;
-  color: white;
-  text-align: center;
-}
-.div-2 {
-  width: 200px;
-  height: 100px;
-  background: rgb(18, 108, 53);
-  color: white;
-  margin-top: 20px;
-  text-align: center;
-}
-.div-3 {
-  width: 200px;
-  height: 100px;
-  background: rgb(57, 24, 156);
-  color: white;
-  margin-top: 20px;
-  text-align: center;
-}
-.container-group {
-  display: flex;
-  justify-content: space-between; /* Um container à esquerda e outro à direita */
-  align-items: flex-start;
-  margin: 40px auto 0 auto;
-  width: 80%; /* Ajusta a largura do grupo */
-}
-
-p {
-  text-align: center;
-  margin-top: 40px;
+.login{
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #1b960b;
+  color: #fff;
   font-size: 18px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  font-weight: 600;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow:0 0 10px #150ee0;
 }
-
-/* Responsividade para tablets e celulares */
-@media (max-width: 900px) {
-  .container-group {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .containe-1,
-  .containe-2 {
-    margin: 20px 0;
-    width: 90vw;
-    height: auto;
-  }
-
-  p {
-    width: 90vw;
-    font-size: 16px;
-    margin-top: 20px;
-  }
+.login:hover{
+  background:transparent;
+  border: 4px solid #1b960b;
+  color: #feee0e;
+  transition: 0.5;
 }
-
-@media (max-width: 600px) {
-  .cabeçalho {
-    font-size: 18px;
-    height: auto;
-    padding: 10px 0;
-  }
-
-  ul,
-  li {
-    gap: 20px;
-    font-size: 16px;
-    margin-right: 0;
-    margin-top: 5px;
-  }
-
-  .div-1,
-  .div-2,
-  .div-3 {
-    width: 90vw;
-    height: 60px;
-    font-size: 14px;
-  }
+.register-link{
+  text-align: center;
+  margin: 20px 0 10px;
+  font-size: 16px;
+ 
+}
+.register-link a{
+  color: #fbfb09;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link a:hover{
+  text-decoration: underline;
 }
