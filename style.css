@@ -111,3 +111,10 @@ body { /*  todo o estilo dentro do  body */
 .register-link a:hover{
   text-decoration: underline;
 }
+@media screen and (max-width: 480px){
+  .conteiner{
+    width: 90%;
+    padding: 20px;
+  }
+  
+}
